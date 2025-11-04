@@ -1,56 +1,66 @@
-🤖 NLP-TestCase-Automator
+# 🤖 NLP-TestCase-Automator
+AI-powered tool that automatically generates software test cases from **plain English requirements** using **Natural Language Processing (NLP)** and basic rule‑based AI.
 
-AI-Based Test Case Generator Using Natural Language Processing
+## 📌 Overview
+NLP-TestCase-Automator converts user stories or requirement statements like:
+> "User should be able to log in using email and password"
+into structured **test cases** with steps, inputs, and expected results.
+This helps QA engineers **save time**, **reduce manual effort**, and **improve test coverage**.
 
-🧩 Overview
-NLP-TestCase-Automator is an AI-powered system that automatically generates structured test cases from plain English software requirements using Natural Language Processing (NLP) and Machine Learning (ML).
-The project aims to help Software Quality Assurance (SQA) teams by reducing manual test design effort, improving consistency, and accelerating test creation.
-For example, given a requirement:
-“User should be able to register using email and password.”
-the system intelligently interprets the statement and produces corresponding test scenarios, steps, inputs, and expected results — ready to use in automation frameworks like Selenium or Playwright.
+## 🚀 Features
+* Understand natural language requirement text
+* Extract actions, inputs, and expected behavior
+* Generate structured test cases automatically
+* Display results in a simple **web UI** (Streamlit)
 
-🚀 Key Features
-🧠 NLP-driven requirement understanding
-⚙️ Automatic test case generation from user stories or feature files
-📄 Structured output format (JSON, CSV, or Gherkin)
-🔍 Entity and action extraction using pretrained models
-🔄 ML-based learning from existing test cases for improved accuracy
-💡 Integration-ready with automation tools like Selenium or Cypress
+## 🧠 Tech Used
+| Component   | Technology |
+| ----------- | ---------- |
+| Language    | Python     |
+| NLP Library | spaCy      |
+| UI          | Streamlit  |
+| Data        | Pandas     |
 
-🧠 How It Works
-Input Parsing: Accepts requirement text written in natural language.
-NLP Analysis: Uses spaCy or transformers for POS tagging, dependency parsing, and intent extraction.
-Pattern Mapping: Identifies user actions, inputs, and outcomes using trained ML models or predefined templates.
-Test Case Generation: Converts interpreted data into structured test cases.
-Output: Displays or exports test cases for QA use.
+## 🗂️ Folder Structure
+```
+NLP-TestCase-Automator/
+ ├── app.py
+ ├── test_generator.py
+ ├── requirements.txt
+ └── README.md
+```
 
-🧰 Tech Stack
-Programming Language: Python
-Core Libraries: spaCy, NLTK, Transformers
-ML Framework: Scikit-learn or PyTorch
-Interface (optional): Streamlit or Flask
-Version Control: Git + GitHub
+## ⚙️ Installation
+```bash
+pip install spacy
+pip install nltk
+pip install pandas
+pip install streamlit
+pip install transformers
+python -m spacy download en_core_web_sm
+```
 
-🧪 Example
-Input
-“User should be able to log in using valid credentials.”
+## ▶️ Run the App
+```bash
+streamlit run app.py
+```
 
-Output
-Step	Action	Input	Expected Result
-1	Open login page	—	Login page should appear
-2	Enter valid email and password	Email, Password	Dashboard is displayed
-3	Enter invalid credentials	Email, Password	Error message is shown
+## 🎯 Example Input
+> "User should be able to register using email and password"
 
-🔍 Use Case
-Ideal for QA engineers, test automation specialists, and SQA teams.
-Useful in large-scale or agile projects with frequently changing requirements.
-Enhances test coverage and reduces manual effort in test design.
+### ✅ Output (Test Case Table)
+| Step | Action                     | Input                | Expected Result |
+| ---- | -------------------------- | -------------------- | --------------- |
+| 1    | Open registration page     | —                    | Page loads      |
+| 2    | Enter valid email/password | email, password      | Account created |
+| 3    | Enter invalid values       | wrong email/password | Error message   |
 
-⚙️ Future Enhancements
-✅ Export test cases to automation scripts (Selenium, Playwright)
-✅ Add test case prioritization based on risk analysis
-✅ Enable learning from user feedback to improve test generation accuracy
-✅ Support multi-language requirement parsing
+
+## 📚 Future Enhancements
+* Gherkin (Given‑When‑Then) output
+* ML model for smarter test case generation
+* Export to Excel / JSON
+* Integration with Selenium
 
 👥 Team
 Developed by:
