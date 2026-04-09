@@ -1,7 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-001,Valid Input (Pytest),number_guessing_game(),"""Congratulations! You guessed it in 2 attempts.""",Happy Path
-TC-002,Invalid Input (Pytest),"number_guessing_game("" invalid input "")","""Please enter a valid number.""",Error Handling
-TC-003,Valid Input (Unittest),None,"""Congratulations! You guessed it in 2 attempts.""",Happy Path
-TC-004,Too Low (Unittest),None,True,Too Low
-TC-005,Too High (Unittest),None,True,Too High
-TC-006,Infinite Loop (Pytest/Unittest),None,None (Raises KeyboardInterrupt),Infinite Loop

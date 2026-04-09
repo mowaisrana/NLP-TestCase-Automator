@@ -1,5 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-001,Happy Path string,is_palindrome('racecar'),True,Happy Path
-TC-002,Non-palindrome,is_palindrome('hello'),False,Happy Path
-TC-003,Invaliad Input Type,is_palindrome(123),TypeError,Happy Path
-TC-004,Empty Input,is_palindrome(''),False,Happy Path

@@ -1,4 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-001,Valid Input,"add(5, 5)",10,Happy Path
-TC-002,Positive and Negative Numbers,"add(5, -3)",2,Happy Path
-TC-003,Zero Division Error Check,"add(1, 0)",ValueError: division by zero,Error Handling

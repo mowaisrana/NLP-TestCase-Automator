@@ -1,3 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-001,Test valid input,is_palindrome('some value'),True,Happy Path
-TC-002,Test invali...,is_palindrome(None),Error,Error Handling

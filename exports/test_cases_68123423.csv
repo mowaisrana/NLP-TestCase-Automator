@@ -1,9 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-001,Validate empty fields,"Enter empty values for both username and password, click 'Login' button",Required field error displayed for either Username or Password field,Functional
-TC-002,Validate invalid email for username,"Enter an invalid email address (e.g., example.com) as the username, click 'Login' button",Required field error displayed if no '@' symbol found in input,Functional
-TC-003,Validate password length,"Enter a password with less than 8 characters, click 'Login' button",Required field error displayed for Password field,Functional
-TC-004,Validate valid email and password,"Enter a valid email address as the username and a password of at least 8 characters, click 'Login' button",Successful login or redirect to another page (if implemented),Functional
-TC-005,Validate 'Forgot Password' link functionality,Click on 'Forgot Password' link,Redirect to recovery page,Functional
-TC-006,Validate error message for empty required fields,"Enter empty values for both username and password, click 'Login' button without any error message present","""Required field"" error displayed for either Username or Password field if error message is not shown initially",Functional
-TC-007,Validate error message for invalid email address (no '@'),"Enter an invalid email address (e.g., example.com) as the username, click 'Login' button without any error message present","""Required field"" error displayed if no '@' symbol found in input, and additional error message indicating missing '@' symbol in email address",Functional
-TC-008,Validate error message for password length (less than 8 characters),"Enter a password with less than 8 characters, click 'Login' button without any error message present","""Required field"" error displayed for Password field, and additional error message indicating password length is less than the required 8 characters",Functional

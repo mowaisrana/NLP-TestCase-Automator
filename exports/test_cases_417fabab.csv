@@ -1,3 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-001,Valid input,"a=5, b=3",8,Happy Path
-TC-002,Type error,"a=""text"", b=3",TypeError,Error Handling

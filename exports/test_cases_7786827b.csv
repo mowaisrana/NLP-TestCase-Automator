@@ -1,7 +1,0 @@
-Test Case ID,Description,Input,Expected Output,Test Type
-TC-009,Input not a string,5,TypeError: Input must be a string,Error Handling
-TC-010,Input contains non-alphanumeric characters,"""3A3""",True,Edge Case
-TC-010,Input not alphanumeric characters,"""3A3""",True,Error Handling/Edge Case
-TC-010,Description,"The function should handle input containing non-alphanumeric characters gracefully, and still return the correct palindrome status.",,
-TC-010,Input Data,"""3A3"" (note: this string contains a numeric character)",,
-TC-010,Expected Output,"True (the function correctly identifies it as a palindrome, despite containing non-alphanumeric characters)",,
