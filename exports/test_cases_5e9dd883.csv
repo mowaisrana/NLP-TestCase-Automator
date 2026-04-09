@@ -1,0 +1,21 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Submit valid form,"Enter 'John', Click Submit",Success Message,Happy Path
+TC-002,Submit empty form,"Leave all empty, Click Submit",Validation Error,Validation
+TC-003,Invaliad email,"Enter 'abc', Click Submit","""Invalid Email""",Negative
+TC-004,Username and password match,"Enter 'John', 'admin', Click Login",Success Message,Happy Path
+TC-005,Password and confirm password match,"Enter 'John', 'admin', Click Login",Confirmation message,Happy Path
+TC-006,Username and age match,"Enter 'John', '31', Click Login",Success Message,Happy Path
+TC-007,Age must be between 18 to 55 years old,"Enter 'John', '20', Click Login",Validation Error,Validation
+TC-008,Email format is invalid,"Enter 'abc@def.ghi', Click Login",Validation Error,Negative
+TC-009,Invalid email format,"Enter 'abcd@123', Click Login","""Invalid Email""",Negative
+TC-010,Username and password match,"Enter 'John', 'admin', Click Login",Confirmation message,Happy Path
+TC-011,Password and confirm password match,"Enter 'John', 'admin', Click Login",Success Message,Happy Path
+TC-012,Username and age match,"Enter 'John', '31', Click Login",Success Message,Happy Path
+TC-013,Age must be between 18 to 55 years old,"Enter 'John', '20', Click Login",Validation Error,Validation
+TC-014,Email format is invalid,"Enter 'abc@def.ghi', Click Login",Validation Error,Negative
+TC-015,Invaliad email format,"Enter 'abcd@123', Click Login","""Invalid Email""",Negative
+TC-016,Username and password match,"Enter 'John', 'admin', Click Login",Confirmation message,Happy Path
+TC-017,Password and confirm password match,"Enter 'John', 'admin', Click Login",Success Message,Happy Path
+TC-018,Username and age match,"Enter 'John', '31', Click Login",Success Message,Happy Path
+TC-019,Age must be between 18 to 55 years old,"Enter 'John', '20', Click Login",Validation Error,Validation
+TC-020,Email format is invalid,"Enter 'abc@def.ghi', Click Login",Validation Error,Negative

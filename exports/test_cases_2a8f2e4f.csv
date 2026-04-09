@@ -1,0 +1,41 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Happy Path string,"""racecar""",True,Happy Path
+TC-002,Non-palindrome,"""hello""",False,Happy Path
+TC-003,Invaliad Input Type,123,TypeError,Happy Path
+TC-004,Empty Input,"""""",False,Happy Path
+TC-005,Happy Path string,"""racecar""",True,Happy Path
+TC-006,Non-palindrome,"""hello""",False,Happy Path
+TC-007,Invaliad Input Type,123,TypeError,Happy Path
+TC-008,Empty Input,"""""",False,Happy Path
+TC-009,Happy Path string,"""racecar""",True,Happy Path
+TC-010,Non-palindrome,"""hello""",False,Happy Path
+TC-011,Invaliad Input Type,123,TypeError,Happy Path
+TC-012,Empty Input,"""""",False,Happy Path
+TC-013,Happy Path string,"""racecar""",True,Happy Path
+TC-014,Non-palindrome,"""hello""",False,Happy Path
+TC-015,Invaliad Input Type,123,TypeError,Happy Path
+TC-016,Empty Input,"""""",False,Happy Path
+TC-017,Happy Path string,"""racecar""",True,Happy Path
+TC-018,Non-palindrome,"""hello""",False,Happy Path
+TC-019,Invaliad Input Type,123,TypeError,Happy Path
+TC-020,Empty Input,"""""",False,Happy Path
+TC-021,Happy Path string,"""racecar""",True,Happy Path
+TC-022,Non-palindrome,"""hello""",False,Happy Path
+TC-023,Invaliad Input Type,123,TypeError,Happy Path
+TC-024,Empty Input,"""""",False,Happy Path
+TC-025,Happy Path string,"""racecar""",True,Happy Path
+TC-026,Non-palindrome,"""hello""",False,Happy Path
+TC-027,Invaliad Input Type,123,TypeError,Happy Path
+TC-028,Empty Input,"""""",False,Happy Path
+TC-029,Happy Path string,"""racecar""",True,Happy Path
+TC-030,Non-palindrome,"""hello""",False,Happy Path
+TC-031,Invaliad Input Type,123,TypeError,Happy Path
+TC-032,Empty Input,"""""",False,Happy Path
+TC-033,Happy Path string,"""racecar""",True,Happy Path
+TC-034,Non-palindrome,"""hello""",False,Happy Path
+TC-035,Invaliad Input Type,123,TypeError,Happy Path
+TC-036,Empty Input,"""""",False,Happy Path
+TC-037,Happy Path string,"""racecar""",True,Happy Path
+TC-038,Non-palindrome,"""hello""",False,Happy Path
+TC-039,Invaliad Input Type,123,TypeError,Happy Path
+TC-040,Empty Input,"""""",False,Happy Path

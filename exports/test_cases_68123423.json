@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-01-08T23:55:18.969023",
+  "total_test_cases": 8,
+  "test_cases": [
+    {
+      "Test Case ID": "TC-001",
+      "Description": "Validate empty fields",
+      "Input": "Enter empty values for both username and password, click 'Login' button",
+      "Expected Output": "Required field error displayed for either Username or Password field",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-002",
+      "Description": "Validate invalid email for username",
+      "Input": "Enter an invalid email address (e.g., example.com) as the username, click 'Login' button",
+      "Expected Output": "Required field error displayed if no '@' symbol found in input",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-003",
+      "Description": "Validate password length",
+      "Input": "Enter a password with less than 8 characters, click 'Login' button",
+      "Expected Output": "Required field error displayed for Password field",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-004",
+      "Description": "Validate valid email and password",
+      "Input": "Enter a valid email address as the username and a password of at least 8 characters, click 'Login' button",
+      "Expected Output": "Successful login or redirect to another page (if implemented)",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-005",
+      "Description": "Validate 'Forgot Password' link functionality",
+      "Input": "Click on 'Forgot Password' link",
+      "Expected Output": "Redirect to recovery page",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-006",
+      "Description": "Validate error message for empty required fields",
+      "Input": "Enter empty values for both username and password, click 'Login' button without any error message present",
+      "Expected Output": "\"Required field\" error displayed for either Username or Password field if error message is not shown initially",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-007",
+      "Description": "Validate error message for invalid email address (no '@')",
+      "Input": "Enter an invalid email address (e.g., example.com) as the username, click 'Login' button without any error message present",
+      "Expected Output": "\"Required field\" error displayed if no '@' symbol found in input, and additional error message indicating missing '@' symbol in email address",
+      "Test Type": "Functional"
+    },
+    {
+      "Test Case ID": "TC-008",
+      "Description": "Validate error message for password length (less than 8 characters)",
+      "Input": "Enter a password with less than 8 characters, click 'Login' button without any error message present",
+      "Expected Output": "\"Required field\" error displayed for Password field, and additional error message indicating password length is less than the required 8 characters",
+      "Test Type": "Functional"
+    }
+  ]
+}

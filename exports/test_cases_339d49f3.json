@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-01-09T01:40:34.831740",
+  "total_test_cases": 6,
+  "test_cases": [
+    {
+      "Test Case ID": "TC-001",
+      "Description": "Valid Input (Pytest)",
+      "Input": "number_guessing_game()",
+      "Expected Output": "\"Congratulations! You guessed it in 2 attempts.\"",
+      "Test Type": "Happy Path"
+    },
+    {
+      "Test Case ID": "TC-002",
+      "Description": "Invalid Input (Pytest)",
+      "Input": "number_guessing_game(\" invalid input \")",
+      "Expected Output": "\"Please enter a valid number.\"",
+      "Test Type": "Error Handling"
+    },
+    {
+      "Test Case ID": "TC-003",
+      "Description": "Valid Input (Unittest)",
+      "Input": "None",
+      "Expected Output": "\"Congratulations! You guessed it in 2 attempts.\"",
+      "Test Type": "Happy Path"
+    },
+    {
+      "Test Case ID": "TC-004",
+      "Description": "Too Low (Unittest)",
+      "Input": "None",
+      "Expected Output": "True",
+      "Test Type": "Too Low"
+    },
+    {
+      "Test Case ID": "TC-005",
+      "Description": "Too High (Unittest)",
+      "Input": "None",
+      "Expected Output": "True",
+      "Test Type": "Too High"
+    },
+    {
+      "Test Case ID": "TC-006",
+      "Description": "Infinite Loop (Pytest/Unittest)",
+      "Input": "None",
+      "Expected Output": "None (Raises KeyboardInterrupt)",
+      "Test Type": "Infinite Loop"
+    }
+  ]
+}

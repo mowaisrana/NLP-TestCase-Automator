@@ -1,0 +1,28 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-002,Happy Path string,"""racecar""",True,Happy Path
+TC-003,Non-palindrome,"""hello""",False,Error Handling
+TC-004,Invaliad Input Type,123,TypeError,Boundary Value
+TC-006,Happy Path string,"""hello""",True,Happy Path
+TC-007,Non-palindrome,"""racecar""",False,Error Handling
+TC-008,Invaliad Input Type,123,TypeError,Boundary Value
+TC-010,Happy Path string,"""hello""",True,Happy Path
+TC-011,Non-palindrome,"""racecar""",False,Error Handling
+TC-012,Invaliad Input Type,"""123""",TypeError,Boundary Value
+TC-014,Happy Path string,"""racecar""",True,Happy Path
+TC-015,Non-palindrome,"""hello""",False,Error Handling
+TC-016,Invaliad Input Type,"""123""",TypeError,Boundary Value
+TC-018,Happy Path string,"""hello""",True,Happy Path
+TC-019,Non-palindrome,"""racecar""",False,Error Handling
+TC-020,Invaliad Input Type,123,TypeError,Boundary Value
+TC-022,Happy Path string,"""racecar""",True,Happy Path
+TC-023,Non-palindrome,"""hello""",False,Error Handling
+TC-024,Invaliad Input Type,123,TypeError,Boundary Value
+TC-026,Happy Path string,"""hello""",True,Happy Path
+TC-027,Non-palindrome,"""racecar""",False,Error Handling
+TC-028,Invaliad Input Type,"""123""",TypeError,Boundary Value
+TC-030,Happy Path string,"""racecar""",True,Happy Path
+TC-031,Non-palindrome,"""hello""",False,Error Handling
+TC-032,Invaliad Input Type,"""123""",TypeError,Boundary Value
+TC-034,Happy Path string,"""racecar""",True,Happy Path
+TC-035,Non-palindrome,"""hello""",False,Error Handling
+TC-036,Invaliad Input Type,"""123""",TypeError,Boundary Value

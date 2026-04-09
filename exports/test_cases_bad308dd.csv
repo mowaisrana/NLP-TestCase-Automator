@@ -1,0 +1,10 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Test valid input,is_palindrome('some_value'),True,Happy Path
+TC-002,Test invaliad input,is_palindrome(None),Error,Error Handling
+TC-003,Ensure is_palindrome() returns True for '123',is_palindrome('123'),True,Happy Path
+TC-004,Ensure is_palindrome() returns False for 'abcd',is_palindrome('abcd'),Error,Error Handling
+TC-005,Ensure is_palindrome() returns False for empty string,is_palindrome(''),Error,Error Handling
+TC-006,Ensure is_palindrome() returns False for non-string input,32.123,Error,Error Handling
+TC-007,Ensure is_palindrome() returns False for invalid function name,'is_none',Error,Error Handling
+TC-008,Ensure is_palindrome() ignores non-alphabet characters and punctuation marks,'hello! 12',True,Happy Path
+TC-009,Ensure is_palindrome() handles input that contains multiple equal signs,'=',True,Happy Path

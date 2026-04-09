@@ -1,0 +1,6 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid Input,add(5),10,Happy Path
+TC-002,Invalid Input,add(-1),ValueError,Error Handling
+TC-003,Minimum Integer Boundary Value,add(0 + 1),1,Happy Path
+TC-004,Maximum Integer Boundary Value,add(2**31 - 1 + 1),2**31,Happy Path
+TC-005,Adding zero to any value,add(0),0,Happy Path

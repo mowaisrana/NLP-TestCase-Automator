@@ -1,0 +1,11 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Successful submission (Happy Path),"Enter valid email, password, name, username, age",Submission is successful and no errors are shown,Happy Path
+TC-002,Email format validation error,Enter an invalid email address,Error message for incorrect email format is displayed,Validation
+TC-003,Required field validation error (Email),Leave the email field empty,Error message for required field is displayed for email field,Validation
+TC-004,Required field validation error (Password),Leave the password field empty,Error message for required field is displayed for password field,Validation
+TC-005,Required field validation error (Name),Leave the name field empty,Error message for required field is displayed for name field,Validation
+TC-006,Required field validation error (Username),Leave the username field empty,Error message for required field is displayed for username field,Validation
+TC-007,Required field validation error (Age),Leave the age field empty,Error message for required field is displayed for age field,Validation
+TC-008,Password length validation error,Enter a password with less than 6 characters,Error message for incorrect password length is displayed,Validation
+TC-009,Age validation error,Enter an age below 18 or above the maximum allowed age,Error message for incorrect age is displayed,Validation
+TC-010,Multiple field submission,Enter valid data for all fields,Submission is successful and no errors are shown (Multiple Fields),Happy Path

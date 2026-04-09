@@ -1,0 +1,10 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid Input (Happy Path),"find_max_score([5, 10, 15])",15,Pass
+TC-002,Empty List,find_max_score([]),None,Pass
+TC-003,Single Score,find_max_score([7]),7,Pass
+TC-004,Integer Scores,"find_max_score([1, 2, 3, 4])",4,Pass
+TC-005,Floating-Point Scores,"find_max_score([3.14, 2.72, 1.618])",3.14,Pass
+TC-006,Mixed Data Types (Integer and Float),"find_max_score([3, 2.7, 1.6])",ValueError,Failure
+TC-007,Negative Scores,"find_max_score([-5, -10, -15])",-5,Pass
+TC-008,Invalid Input (Empty List),find_max_score([]),None,Pass
+TC-009,Invalid Input (Non-number Values),"find_max_score([""a"", ""b"", 3])",TypeError,Failure

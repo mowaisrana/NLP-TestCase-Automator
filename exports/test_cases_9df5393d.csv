@@ -1,0 +1,9 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid positive integers,"a=5, b=3",8,Happy Path
+TC-002,Invaliid string input,"a=""text"", b=3",TypeError,Error Handling
+TC-003,Zero values,"a=0, b=0",0,Boundary Value
+TC-004,Repeatedly non-integer inputs,"a=1, b=2",TypeError,Error Handling
+TC-005,Nested strings,"a=f""abc{5}"", b=5",TypeError,Error Handling
+TC-006,Negative integer inputs,"a=-1, b=2",TypeError,Error Handling
+TC-007,Non-integer inputs with spaces,"a=1, b=""2""",TypeError,Error Handling
+TC-008,Non-integer inputs with commas,"a=1, b=""2,""",TypeError,Error Handling

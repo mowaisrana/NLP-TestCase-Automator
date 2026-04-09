@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-01-08T23:29:13.637013",
+  "total_test_cases": 3,
+  "test_cases": [
+    {
+      "Test Case ID": "TC-001",
+      "Description": "Valid Input",
+      "Input": "add(5, 5)",
+      "Expected Output": "10",
+      "Test Type": "Happy Path"
+    },
+    {
+      "Test Case ID": "TC-002",
+      "Description": "Positive and Negative Numbers",
+      "Input": "add(5, -3)",
+      "Expected Output": "2",
+      "Test Type": "Happy Path"
+    },
+    {
+      "Test Case ID": "TC-003",
+      "Description": "Zero Division Error Check",
+      "Input": "add(1, 0)",
+      "Expected Output": "ValueError: division by zero",
+      "Test Type": "Error Handling"
+    }
+  ]
+}

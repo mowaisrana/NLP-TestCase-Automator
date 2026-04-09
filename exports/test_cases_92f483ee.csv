@@ -1,0 +1,4 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid Input,"add(5, 5)",10,Happy Path
+TC-002,Different Data Types,"add(5, '3')",TypeError,Error Handling
+TC-003,Zero as Second Argument,"add(5, 0)",5,Happy Path

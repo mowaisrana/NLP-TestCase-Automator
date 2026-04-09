@@ -1,0 +1,5 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Happy Path string,is_palindrome('racecar'),True,Happy Path
+TC-002,Non-palindrome,is_palindrome('hello'),False,Non-palindrome
+TC-004,Empty Inpu...,is_palindrome(''),False,Boundary Value
+TC-001,RULES:,Use the actual function name: 'is_palindrome',Generate inputs relevant to the code logic.,Ensure every line has exactly 4 vertical bars (

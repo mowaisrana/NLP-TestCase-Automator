@@ -1,0 +1,10 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Happy Path string,is_palindrome('racecar'),True,Happy Path
+TC-002,Non-palindrome,is_palindrome('hello'),False,Non-Happy Path
+TC-003,Invaliad Input Type,is_palindrome(123),TypeError,Input is not a function or method call
+TC-004,Empty Input,is_palindrome(''),False,Empty input value
+TC-005,Palindrome,is_palindrome('racecar'),True,Palindrome input
+TC-006,Non-palindrome,is_palindrome('hello'),False,Non-palindrome input
+TC-007,Numeric Input,is_palindrome(123.45),TypeError,Not a float or numeric value
+TC-008,Empty string,is_palindrome(),Error Handling,Empty function call or variable
+TC-009,Palindromic input with whitespace,is_palindrome('hello ' + ' world'),True,Palindromic and whitespace-free input

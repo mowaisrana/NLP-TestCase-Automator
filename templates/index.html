@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Test Case Generator - Professional Edition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1 style=" font-size: 30px; font-weight: bold">🤖 AI Test Case Generator</h1>
+                <p style=" font-size: 16px; font-weight: bold">From requirements to runnable tests in seconds.</p>
+                <p style=" font-size: 14px"class="subtitle">SDET-ready | Custom LLM Orchestration | Reinforcement Learning Human Feedback</p>
+            </div>
+            
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="icon-sun hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+
+        <div class="nav-tabs" style=" display: flex; border-bottom: 1px solid var(--color-border); background: var(--color-surface); margin-bottom: 20px;">
+            <button id="tabGenerator" class="tab-btn active" style=" font-size: 16px; font-weight: bold; flex: 1; padding: 15px; border: none; background: none; cursor: pointer; font-weight: bold; color: var(--color-primary); border-bottom: 3px solid var(--color-primary);">
+                ⚡ Generator
+            </button>
+            <button id="tabHistory" class="tab-btn" style="font-size: 16px; font-weight: bold; flex: 1; padding: 15px; border: none; background: none; cursor: pointer; font-weight: bold; color: var(--color-text-secondary); border-bottom: 3px solid transparent;">
+                📜 History
+            </button>
+        </div>
+
+        <div class="main-content">
+            
+            <div id="viewGenerator">
+                <form id="testForm" method="POST" action="/generate">
+                    
+                    <div class="form-group">
+                        <label style=" font-size: 16px; font-weight: bold">What are you testing?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="input_type" value="code" checked>
+                                <span style=" font-size: 14px; font-weight: bold">Code Snippet (Unit Testing)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="input_type" value="ui">
+                                <span style=" font-size: 14px; font-weight: bold">UI/Form Description (Web Testing)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label for="inputText" style="font-size: 14px; font-weight: bold; margin-bottom: 0;">Paste Code or UI Description</label>
+                            <button type="button" id="btnFillExample" class="btn-link">✨ Try Example</button>
+                        </div>
+                        
+                        <textarea style=" font-size: 14px" 
+                            id="inputText" 
+                            name="input_text" 
+                            placeholder="Paste your Python code here... or describe the UI/form you want to test..." 
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-generate">Generate Test Cases</button>
+                </form>
+
+                <div id="loading" class="loading hidden">
+                    <h3 class="loading-title">🚀 Orchestrating AI Agents...</h3>
+                    <div class="progress-container">
+                        <div class="step" data-step="1">
+                            <div class="step-circle">1</div>
+                            <span class="step-text">Analyzing</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="step" data-step="2">
+                            <div class="step-circle">2</div>
+                            <span class="step-text">Insights</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="step" data-step="3">
+                            <div class="step-circle">3</div>
+                            <span class="step-text">Prompting</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="step" data-step="4">
+                            <div class="step-circle">4</div>
+                            <span class="step-text">Generating</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="step" data-step="5">
+                            <div class="step-circle">5</div>
+                            <span class="step-text">Parsing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="results" class="results hidden">
+                    <h2>Generated Test Cases</h2>
+                    
+                    <div id="orchestrationSummary" class="summary"></div>
+                    
+                    <div id="testCasesTable"></div>
+
+                    <div class="download-section" style="margin-top: 20px; text-align: center; background: var(--color-surface); padding: 15px; border-radius: 8px; border: 1px solid var(--color-border);">
+                        <h3 style="margin-bottom: 10px; opacity: 0.8; font-size: 0.9rem;">Select Download Format:</h3>
+                        
+                        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px;">
+                            <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="dl_format" value="csv" checked> 
+                                <span style="color: var(--color-success); font-weight: bold;">📄 CSV (Manual QA)</span>
+                            </label>
+                            
+                            <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="dl_format" value="json"> 
+                                <span style="color: var(--color-warning); font-weight: bold;">{🧾} JSON (Automation)</span>
+                            </label>
+                            
+                            <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="dl_format" value="xlsx"> 
+                                <span style="color: var(--color-primary); font-weight: bold;">📊 Excel (TestRail)</span>
+                            </label>
+                        </div>
+
+                        <a id="mainDownloadBtn" href="#" class="btn-download" style="width: 100%; display: block; text-align: center;">
+                            📥 Download Selected File
+                        </a>
+                    </div>
+                </div>
+
+                <div id="errorDiv" class="error hidden"></div>
+            </div>
+
+            <div id="viewHistory" class="hidden" style="padding: 20px;">
+                <div id="historyList">
+                    <p style="text-align: center; color: var(--color-text-secondary);">Loading history...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Designed by an Aspiring SQA Engineers — built for real test workflows.</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

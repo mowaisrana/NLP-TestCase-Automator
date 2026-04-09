@@ -1,0 +1,11 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid positive integers,"a=5, b=3",Expected Output,Happy Path
+TC-002,Invaliid string input,"a=""text"", b=3",Expected Output,Error Handling
+TC-003,Zero values,"a=0, b=0",Expected Output,Boundary Value
+TC-004,Error in string formatting,"a=""string %i"", b=3",Expected Output,Error Handling
+TC-005,Edge cases: Negative values,"a=-5, b=3",Expected Output,Boundary Value
+TC-006,Edge cases: Non-numeric strings,"a=""text"", b=1.9",Expected Output,Error Handling
+TC-007,Edge cases: String inputs with zero length,"a=0, b=0",Expected Output,Boundary Value
+TC-008,Edge cases: Invalid types,"a=5, b=""text""",Expected Output,Error Handling
+TC-009,Edge cases: No input types,"a=5, b=""text""",Expected Output,Error Handling
+TC-010,Edge cases: Invalid values for b,"a=5, b=-3",Expected Output,Error Handling

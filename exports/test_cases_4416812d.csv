@@ -1,0 +1,12 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid Input (Happy Path),"add(5, 5)",10,Happy Path
+TC-002,Negative Number as Input,"add(-1, 2)",ValueError: Must be int,Error Handling
+TC-003,Zero as First Argument,"add(0, 5)",5,Happy Path
+TC-004,Zero as Second Argument,"add(6, 0)",6,Happy Path
+TC-005,Large Positive Number as Input,"add(2147483647, 1)",2147483648,Happy Path
+TC-006,Large Negative Number as Input,"add(-2147483648, -1)",-2147483647,Happy Path
+TC-007,Float as Input (Rounded to nearest integer),"add(4.5, 6)",10,Error Handling
+TC-008,Mixed Data Types Input (Integer and String),"add(""5"", 2)",ValueError: Must be int,Error Handling
+TC-009,Empty Inputs,"add(None, None)",TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType',Error Handling
+TC-010,Non-integer Input (List),"add([1, 2, 3])",TypeError: Must be int,Error Handling
+TC-011,Non-integer Input (Dictionary),"add({""a"": 1})",TypeError: unsupported operand type(s) for +: 'dict' and 'int',Error Handling

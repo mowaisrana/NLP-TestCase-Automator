@@ -1,0 +1,8 @@
+Test Case ID,Description,Input,Expected Output,Test Type
+TC-001,Valid Input (Happy Path),"find_max_score([5, 10, 15, 20])",20,Happy Path
+TC-002,Empty List,find_max_score([]),None,Error Handling
+TC-003,Non-Number Inputs (Edge Case),"find_max_score([""a"", 1, ""b"", 5])",TypeError,Error Handling
+TC-004,Negative Numbers (Boundary Value),"find_max_score([-1, -2, -3, -4])",-1,Happy Path with Minimum Value
+TC-005,Mixed Numbers and Strings (Edge Case),"find_max_score([1, ""a"", 3, ""b""])",TypeError,Error Handling
+TC-006,All zeros (Edge Case),"find_max_score([0, 0, 0])",0,Happy Path with Minimum Value
+TC-007,One Number (Happy Path),find_max_score([25]),25,Happy Path with Single Value
